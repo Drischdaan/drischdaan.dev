@@ -11,8 +11,8 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 20, 20, 20;
-  --background-end-rgb: 0, 0, 0;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 25, 25, 25;
 
   --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
   --secondary-glow: linear-gradient(
@@ -51,16 +51,32 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: var(--font);
+  scroll-behavior: smooth;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.home-background {
+  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+}
+
+.about-background {
+  background-color: rgb(var(--background-end-rgb));
+}
+
+.projects-background {
+  background: linear-gradient(to bottom, rgb(var(--background-end-rgb)), rgb(var(--background-start-rgb)));
+}
+
+.contact-background {
+  background-color: rgb(var(--background-start-rgb));
 }
 
 .code-font {
