@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full sm:w-auto flex-1 flex justify-center items-center px-10 lg:px-32 py-10 mt-10 sm:mt-0">
-        <div className='w-full sm:w-auto flex justify-center items-start flex-col gap-5'>
+        <div className='hidden w-full sm:w-auto sm:flex justify-center items-start flex-col gap-5'>
           <pre>
             <code dangerouslySetInnerHTML={{ __html: codeHtml }} />
           </pre>
@@ -51,6 +51,7 @@ export default function Home() {
             <p>👋🏼 Hello there!</p>
           </div>
         </div>
+        <div className='block sm:hidden mt-20'></div>
       </div>
       <div className='absolute bottom-0 sm:mb-10'>
         <TfiAngleDown className='text-3xl animate-bounce'/>
