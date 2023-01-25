@@ -53,7 +53,7 @@ export default function Home() {
         </div>
         <div className='block sm:hidden mt-20'></div>
       </div>
-      <div className='absolute bottom-0 sm:mb-10'>
+      <div className='absolute bottom-0 sm:mb-10 hidden sm:block'>
         <TfiAngleDown className='text-3xl animate-bounce'/>
       </div>
     </div>
