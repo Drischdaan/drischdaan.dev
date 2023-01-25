@@ -1,3 +1,9 @@
 .social-button {
-  @apply px-4 py-2 text-neutral-400 bg-neutral-900 outline outline-1 outline-neutral-700 rounded hover:bg-neutral-800 transition-colors duration-300;
+  @apply
+    px-4 py-2
+    text-neutral-400 bg-neutral-900 hover:bg-neutral-800
+    outline outline-1 outline-neutral-700
+    rounded transition-colors duration-300
+    flex justify-start items-center gap-2
+  ;
 }
