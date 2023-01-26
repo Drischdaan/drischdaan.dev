@@ -16,7 +16,7 @@ export default function NavigationHeader() {
           <NavigationLink icon={<FiTool/>} name='projects' elementId='#projects' />
         </li>
         <li>
-          <NavigationLink icon={<FiMessageCircle/>} name='about' elementId='#about' />
+          <NavigationLink icon={<FiMessageCircle/>} name='contact' elementId='#contact' />
         </li>
       </ul>
     </div>
