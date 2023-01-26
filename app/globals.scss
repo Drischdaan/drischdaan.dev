@@ -17,6 +17,7 @@
 html,
 body {
   overflow-x: hidden;
+  overflow-y: overlay;
   scroll-behavior: smooth;
 
   max-width: 100vw;
@@ -30,6 +31,9 @@ body {
 body {
   font-family: var(--font);
   color: rgb(var(--foreground-rgb));
+}
+
+.dark-gradient {
   background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
 }
 
@@ -41,8 +45,19 @@ body {
   font-family: var(--font-mono);
 }
 
-.dark-glass {
+.glass {
   backdrop-filter: blur(7px) saturate(180%);
   -webkit-backdrop-filter: blur(7px) saturate(180%);
-  background-color: rgba(33, 33, 33, 0.75);
+}
+
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-800 hover:bg-neutral-700;
 }

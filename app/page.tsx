@@ -9,6 +9,7 @@ export default function Home() {
 
       {/* Sections */}
       <HomeSection/>
+      <HomeSection/>
     </div>
   );
 }
