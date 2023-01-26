@@ -1,7 +1,4 @@
-import './globals.scss';
-import '../node_modules/highlight.js/styles/googlecode.css';
-
-import 'highlight.js/styles/atom-one-dark.css';
+import ConsoleEasterEgg from "./components/ConsoleEasterEgg";
 
 export default function RootLayout({
   children,
@@ -11,6 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
+      <ConsoleEasterEgg/>
       <body>{children}</body>
     </html>
   );
