@@ -37,6 +37,10 @@ body {
   background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
 }
 
+.dark-gradient-reverse {
+  background: linear-gradient(to bottom, rgb(var(--background-end-rgb)), rgb(var(--background-start-rgb)));
+}
+
 .text-font-default {
   font-family: var(--font);
 }
