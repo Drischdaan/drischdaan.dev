@@ -7,6 +7,7 @@ import Header from './components/Header';
 
 import hljs from 'highlight.js/lib/core';
 import typescript from 'highlight.js/lib/languages/typescript';
+import ProjectCard from './components/ProjectCard';
 
 export default function Home() {
   hljs.registerLanguage('typescript', typescript);
@@ -75,9 +76,8 @@ export default function Home() {
       {/* Projects */}
       <div id='projects' className='projects-background w-screen h-screen'>
         <div className='w-full h-full flex justify-center items-center'>
-          <div className='bg-red-400 p-5 rounded flex justify-center items-center flex-col'>
-            <FiSlash className='text-2xl text-neutral-800' />
-            <h1 className='font-bold text-xl text-neutral-800'>This part is still under construction</h1>
+          <div className='grid grid-cols-4'>
+            <ProjectCard name='Test' description='This is a test project'/>
           </div>
         </div>
       </div>
