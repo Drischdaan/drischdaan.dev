@@ -34,7 +34,7 @@ export default function Terminal() {
             </div>
             <div className='flex justify-end items-center gap-1'>
               <TbBrandNextjs/>
-              <span className='text-xs'>v13.0.1</span>
+              <span className='text-xs'>v13.1.5</span>
             </div>
           </div>
           <div className='flex justify-start items-center gap-1'>
