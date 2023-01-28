@@ -23,7 +23,12 @@ export default function Terminal() {
           <span>sh greet.sh</span>
         </div>
         <div className='flex flex-col justify-center items-start gap-1'>
-          <span>Hey there stranger!</span>
+          <div className='group'>
+            Hello there!
+            <div className='absolute text-red-300 -translate-y-6 translate-x-28 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2 py-1 bg-neutral-700 rounded border border-neutral-600'>
+              <span>General Kenobi!</span>
+            </div>
+          </div>
         </div>
         <div className='flex flex-col justify-center items-start gap-1 w-full mt-5'>
           <div className='flex justify-between items-center gap-2 w-full'>
