@@ -66,7 +66,7 @@ export default function NavigationHeader() {
                 {
                   navigationItems.map((props, index) => {
                     return (
-                      <li key={index}>
+                      <li key={index} onClick={() => setOpen(false)}>
                         <NavigationLink icon={props.icon} name={props.name} elementId={props.elementId} />
                       </li>
                     );
