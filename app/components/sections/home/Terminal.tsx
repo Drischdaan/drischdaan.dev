@@ -6,7 +6,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Terminal() {
   return (
-    <div className='w-full sm:w-3/4 lg:w-1/2 m-5 sm:m-0 terminal flex flex-col'>
+    <div className='w-full sm:w-3/4 lg:w-1/2 m-5 sm:m-0 terminal flex flex-col select-none'>
       <div className='terminal-bar p-2 grid grid-cols-3'>
         <div className='flex justify-start items-center gap-1'>
           <div className='rounded-full p-1.5 bg-red-500'></div>
@@ -37,9 +37,12 @@ export default function Terminal() {
               <FiFolder className='fill-green-400 text-green-400'/>
               <span className='text-neutral-400'>~</span>
             </div>
-            <div className='flex justify-end items-center gap-1'>
-              <TbBrandNextjs/>
+            <div className='flex justify-end items-center gap-1 group'>
+              <TbBrandNextjs className='text-base' />
               <span className='text-xs'>v13.1.5</span>
+              <div className='absolute pointer-events-none text-xs -translate-y-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2 py-1 bg-neutral-700 rounded border border-neutral-600'>
+                <span>NextJS</span>
+              </div>
             </div>
           </div>
           <div className='flex justify-start items-center gap-1'>
