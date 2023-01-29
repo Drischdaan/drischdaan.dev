@@ -15,7 +15,7 @@ export default function Home() {
       <HomeSection/>
       <ContactSection/>
 
-      <div className='fixed bottom-0 left-0 w-full pb-5 pointer-events-none flex justify-center items-center'>
+      <div className='fixed bottom-0 left-0 p-5 pointer-events-none flex justify-center items-center'>
         <div className='rounded bg-amber-400 text-black p-3 flex justify-center items-center gap-1'>
           <FiAlertTriangle/>
           <span>This site is under construction</span>
