@@ -65,3 +65,7 @@ body {
 ::-webkit-scrollbar-thumb {
   @apply bg-neutral-800 hover:bg-neutral-700;
 }
+
+.fullscreen {
+  @apply w-screen h-screen m-0;
+}
