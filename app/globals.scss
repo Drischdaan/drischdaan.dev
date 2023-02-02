@@ -4,3 +4,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --font: 'Sofia Sans', sans-serif;
+  --font-mono: 'Jetbrains Mono', monospace;
+
+  --foreground-default-rgb: 255, 255, 255;
+  --foreground-default: rgb(var(--foreground-default-rgb));
+
+  --background-default-rgb: 0, 0, 0;
+  --background-default: rgb(var(--background-default-rgb));
+}
+
+html, body {
+  color: var(--foreground-default);
+  background-color: var(--background-default);
+}
+
+.flex-full-center {
+  @apply flex justify-center items-center;
+}
+
+.heading {
+  @apply text-white font-bold;
+}
