@@ -14,7 +14,7 @@ export default function Header() {
           <li>Edit</li>
         </ul>
       </div>
-      <div className='flex-initial flex justify-end items-center h-full'>
+      <div className='flex-initial flex h-full'>
         <div className='w-full h-full p-4 hover:bg-[#383A3D] transition-colors duration-200 cursor-pointer'>
           <VscChromeMinimize/>
         </div>
