@@ -1,3 +1,4 @@
+import Navigation from './components/navigation/Navigation';
 import './globals.scss';
 
 export default function Home() {
@@ -7,10 +8,7 @@ export default function Home() {
 
       </div>
       <div className='flex-1 h-full flex flex-col justify-end items-end p-10'>
-        <div className='flex flex-col justify-end items-end font-black text-[70px] leading-none text-neutral-900'>
-          <p className='text-[120px]'>home</p>
-          <p>about</p>
-        </div>
+        <Navigation/>
       </div>
     </div>
   );
