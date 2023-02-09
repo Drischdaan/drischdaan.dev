@@ -1,0 +1,11 @@
+.navigation-item {
+  @apply text-[70px] transition-all duration-300 text-neutral-600 cursor-pointer;
+
+  &:hover {
+    @apply scale-105 text-purple-500;
+  }
+
+  &.active {
+    @apply scale-110 text-purple-400;
+  }
+}
