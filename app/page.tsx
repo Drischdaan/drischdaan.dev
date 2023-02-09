@@ -4,11 +4,11 @@ import './globals.scss';
 export default function Home() {
   return (
     <div className='w-full h-full flex bg-white'>
-      <div className='flex-1 h-full'>
-
-      </div>
-      <div className='flex-1 h-full flex flex-col justify-end items-end p-10'>
-        <Navigation/>
+      <Navigation/>
+      <div className='w-full h-full flex justify-center items-center'>
+        <div className='bg-neutral-200 shadow-inner rounded-md p-3 text-neutral-900 font-black uppercase'>
+          <span>This site is under construction</span>
+        </div>
       </div>
     </div>
   );
