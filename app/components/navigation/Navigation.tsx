@@ -49,7 +49,7 @@ export default function Navigation() {
   ];
 
   return (
-    <div className='fixed top-0 left-0 flex justify-end items-end p-7'>
+    <div className='flex-inital flex justify-start items-center p-7'>
       <div className='flex-initial pointer-events-auto flex flex-col gap-5 justify-end items-end'>
         <div className='w-full'>
           <div className='bg-black rounded-md p-3 flex justify-center items-center select-none'>
