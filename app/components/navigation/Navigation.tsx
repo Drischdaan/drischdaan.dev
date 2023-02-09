@@ -1,6 +1,8 @@
 'use client';
 
 import { MouseEventHandler, useState } from 'react';
+import { IoSettingsSharp } from 'react-icons/io5';
+import { RiLock2Fill } from 'react-icons/ri';
 import './navigation.scss';
 
 interface INavigationItemProps {
@@ -29,6 +31,7 @@ export default function Navigation() {
 
   const createItem = (text: string) => (
     <NavigationItem
+      key={text}
       onClick={() => setActive(text)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -46,13 +49,23 @@ export default function Navigation() {
   ];
 
   return (
-    <div className='flex flex-col justify-end items-end'>
-      <div className='flex flex-col justify-end items-end font-black leading-none bg-neutral-100 p-5 rounded-md'>
-        {navigationItems}
-      </div>
-      <div className='w-full'>
-        <div className='mt-10 bg-black rounded-md p-3 flex justify-center items-center select-none'>
-          <span className='font-black text-4xl text-font-mono'>drischdaan</span>
+    <div className='fixed top-0 left-0 flex justify-end items-end p-7'>
+      <div className='flex-initial pointer-events-auto flex flex-col gap-5 justify-end items-end'>
+        <div className='w-full'>
+          <div className='bg-black rounded-md p-3 flex justify-center items-center select-none'>
+            <span className='font-black text-4xl text-font-mono'>drischdaan</span>
+          </div>
+        </div>
+        <div className='w-full flex justify-between flex-row gap-3 text-3xl'>
+          <div className='flex-1 p-3 bg-black hover:bg-neutral-800 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md flex justify-center items-center'>
+            <IoSettingsSharp/>
+          </div>
+          <div className='flex-1 p-3 bg-black hover:bg-neutral-800 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md flex justify-center items-center'>
+            <RiLock2Fill/>
+          </div>
+        </div>
+        <div className='flex flex-col justify-start items-start font-black leading-none bg-neutral-200 p-5 rounded-md'>
+          {navigationItems}
         </div>
       </div>
     </div>
