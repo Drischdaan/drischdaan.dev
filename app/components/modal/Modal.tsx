@@ -5,7 +5,7 @@ import './modal.scss';
 
 export default function Modal() {
   const [modalState, setModelState] = useState(true);
-  return modalState && (
+  return modalState ? (
     <div className='modal-container'>
       <div className='modal'>
         <div className='p-3'>
@@ -20,5 +20,5 @@ export default function Modal() {
         </div>
       </div>
     </div>
-  );
+  ) : (<div className='hidden'></div>);
 }
