@@ -1,3 +1,4 @@
+import { Header } from './components/Header';
 import './globals.scss';
 
 export default function RootLayout({
@@ -9,6 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className='dark'>
+        <Header/>
         {children}
       </body>
     </html>
