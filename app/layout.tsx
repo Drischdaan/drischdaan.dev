@@ -1,3 +1,7 @@
+import Header from './components/header/Header';
+import Modal from './components/modal/Modal';
+import './globals.scss';
+
 export default function RootLayout({
   children,
 }: {
@@ -6,7 +10,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body className='p-5'>
+        <Header/>
+        <Modal/>
+        {children}
+      </body>
     </html>
   );
 }

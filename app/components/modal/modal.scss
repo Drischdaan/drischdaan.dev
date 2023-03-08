@@ -1,0 +1,7 @@
+.modal-container {
+  @apply z-50 fixed top-0 left-0 right-0 bottom-0 p-5 pointer-events-none flex justify-center items-center;
+
+  .modal {
+    @apply pointer-events-auto p-5 bg-black text-white shadow-xl w-full sm:w-4/5 md:w-1/2 lg:w-1/4;
+  }
+}
