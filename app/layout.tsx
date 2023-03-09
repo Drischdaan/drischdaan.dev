@@ -1,20 +1,14 @@
-import Header from './components/header/Header';
-import Modal from './components/modal/Modal';
-import './globals.scss';
+import "./globals.scss";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <head />
-      <body className='p-5'>
-        <Header/>
-        <Modal/>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

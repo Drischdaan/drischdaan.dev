@@ -1,19 +1,15 @@
 .header {
-  @apply fixed top-5 left-5 right-5 border-4 border-black flex justify-between text-black select-none z-40;
+  @apply border-4 border-black flex justify-between text-black select-none z-40;
 
-  .logo-container {
-    @apply flex-initial py-3 px-5 select-text;
+  .logo {
+    @apply flex-initial py-3 px-5 select-text flex justify-center items-center;
 
     ::selection {
-      @apply text-purple-400;
+      @apply text-black;
     }
 
-    .logo {
-      @apply bg-black py-2 px-5;
-
-      .logo-text {
-        @apply text-white uppercase font-black;
-      }
+    .logo-text {
+      @apply text-purple-500 uppercase font-black;
     }
   }
 
@@ -21,8 +17,7 @@
     @apply flex-1 sm:flex justify-end items-center hidden;
 
     .navigation-link {
-      @apply
-        border-l-4 border-black py-5 px-10 uppercase font-black flex justify-center items-center
+      @apply border-l-4 border-black py-5 px-10 uppercase font-black flex justify-center items-center
         hover:bg-black hover:text-white transition-colors duration-200;
     }
   }
