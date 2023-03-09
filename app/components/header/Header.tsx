@@ -2,9 +2,13 @@
 
 import "./header.scss";
 
+import { useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header() {
+  useEffect(() => {
+    console.log(`Easter 🥚: https://www.youtube.com/watch?v=2tRIjRVcHcQ`);
+  }, []);
   return (
     <div className="header">
       <div className="logo">

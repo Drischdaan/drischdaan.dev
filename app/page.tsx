@@ -39,6 +39,7 @@ export default async function Home() {
             alt={"moai"}
             width={200}
             height={200}
+            priority={true}
           />
         </div>
       </div>
