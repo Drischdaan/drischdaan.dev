@@ -1,24 +1,28 @@
-.header {
-  @apply border-4 border-black flex justify-between text-black select-none z-40;
+.header-container {
+  @apply fixed top-0 left-0 right-0 pt-0 lg:pt-10 bg-white z-10;
 
-  .logo {
-    @apply flex-initial py-3 px-5 select-text flex justify-center items-center;
+  .header {
+    @apply w-full xl:w-3/4 mx-auto border-4 border-black flex justify-between text-black select-none z-30 bg-blue-400;
 
-    ::selection {
-      @apply text-black;
+    .logo {
+      @apply flex-initial py-3 px-5 select-text flex justify-center items-center;
+
+      ::selection {
+        @apply text-black;
+      }
+
+      .logo-text {
+        @apply text-black uppercase font-black;
+      }
     }
 
-    .logo-text {
-      @apply text-purple-500 uppercase font-black;
-    }
-  }
+    .navigation-container {
+      @apply flex-1 sm:flex justify-end items-center hidden;
 
-  .navigation-container {
-    @apply flex-1 sm:flex justify-end items-center hidden;
-
-    .navigation-link {
-      @apply border-l-4 border-black py-5 px-10 uppercase font-black flex justify-center items-center
-        hover:bg-black hover:text-white transition-colors duration-200;
+      .navigation-link {
+        @apply border-l-4 border-black py-5 px-10 uppercase font-black flex justify-center items-center
+          hover:bg-black hover:text-white transition-colors duration-200;
+      }
     }
   }
 }
