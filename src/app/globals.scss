@@ -10,6 +10,12 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 @layer utilities {
   .bg-boxes {
     background-image: linear-gradient(#111111 1px, transparent 1px),

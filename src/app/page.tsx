@@ -1,13 +1,16 @@
+import { Header } from '@/components/Header';
+import { HeroSection } from '@/components/sections/Hero';
+
 export default function Home() {
   return (
-    <main className='flex flex-col'>
-      <div className='flex h-screen flex-col items-center justify-center'>
-        <h1 className='text-8xl font-semibold uppercase text-violet-400'>
-          drischdaan
-        </h1>
+    <main className='relative flex flex-col'>
+      <Header />
+      <HeroSection />
+      <div className='relative h-dvh bg-neutral-950'>
+        <div className='flex h-full items-center justify-center'>
+          This is still work in progress 🚧
+        </div>
       </div>
-      <div className='h-screen bg-neutral-900'></div>
-      <div className='h-screen'></div>
     </main>
   );
 }
