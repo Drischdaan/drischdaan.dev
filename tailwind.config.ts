@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -11,6 +12,24 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-sans)'],
         mono: ['var(--font-mono)'],
+      },
+      colors: {
+        primary: {
+          DEFAULT: colors.indigo[400],
+          ...colors.indigo,
+        },
+        secondary: {
+          DEFAULT: colors.violet[400],
+          ...colors.violet,
+        },
+        accent: {
+          DEFAULT: colors.lime[400],
+          ...colors.lime,
+        },
+        surface: {
+          DEFAULT: colors.neutral[950],
+          ...colors.neutral,
+        },
       },
     },
   },

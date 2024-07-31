@@ -6,7 +6,7 @@ export default function Home() {
     <main className='relative flex flex-col'>
       <Header />
       <HeroSection />
-      <div className='relative h-dvh bg-neutral-950'>
+      <div className='bg-surface relative h-svh'>
         <div className='flex h-full items-center justify-center'>
           This is still work in progress 🚧
         </div>
