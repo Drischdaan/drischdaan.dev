@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section id='hero' className='relative flex h-svh flex-col px-10'>
       <div className='relative flex flex-1 flex-col items-center justify-center'>
-        <div className='bg-surface mb-2 flex flex-row items-center justify-center gap-2 rounded-lg border border-zinc-600 px-3 py-1 text-orange-200 xl:mb-3 xl:px-4'>
+        <div className='mb-2 flex flex-row items-center justify-center gap-2 rounded-lg border border-zinc-600 bg-surface px-3 py-1 text-orange-200 xl:mb-3 xl:px-4'>
           <h2 className='text-sm lg:text-lg xl:text-2xl'>{`Greetings! I'm a`}</h2>
         </div>
         <div className='flex flex-row items-center justify-center gap-2'>
@@ -30,9 +30,9 @@ export function HeroSection() {
         <div className='mt-5 xl:mt-8'>
           <h2 className='text-center text-sm text-zinc-400 lg:text-base xl:text-xl'>
             <span>
-              Pationed about learning new{' '}
-              <span className='text-primary'>technologies</span> and building{' '}
-              <span className='text-accent'>cool stuff</span>.
+              Pationed about{' '}
+              <span className='text-accent'>computer graphics</span> and{' '}
+              <span className='text-primary'>web development</span>.
             </span>
           </h2>
         </div>
@@ -40,7 +40,7 @@ export function HeroSection() {
       <div className='absolute right-[8%] top-[15%] hidden items-center justify-center xl:right-[15%] xl:top-[15%] xl:flex'>
         <CodeCard
           language='C++'
-          code='const FEngine* Engine = new FEngine();'
+          code='FEngine* Engine = new FEngine();'
           rotate='left'
         />
       </div>
